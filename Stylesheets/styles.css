@@ -1,0 +1,332 @@
+body {
+	font-family: 'Tahoma', sans-serif;
+	/*margin: 0 5%;*/
+	font-size: 1.2em;
+	background: #F8F8F9;
+	color: #737F8B;
+	text-align: center;
+}
+
+a:link, a:visited, a:active {
+	color: #737F8B;
+}
+
+h1, 
+h3,
+.main-nav li a,
+footer,
+.footer-nav a,
+.back a {
+	color: #444652;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-top: 8%;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin-top: 10%;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1em;
+	margin-bottom: 15%;
+}
+
+ul {
+	padding: 0;
+}
+
+.main-nav {
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
+
+.main-nav,
+p {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+nav li {
+	background: white;
+	list-style-type: none;
+	list-style-position: inside;
+	margin-bottom: 1%;
+	padding: 4% 0;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-top: 7%;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+
+.page-description {  /* p describing portfolio page */
+	font-size: 1em;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+
+.student-photo {
+	width: 60%;
+}
+
+.portfolio-image {
+	width: 100%;
+	margin-top: 2%;
+}
+
+#portfolio {
+	background: #fff;
+	margin-top: 15%;
+	padding: 10% 5% 10% 5%;
+}
+
+#contact {
+	padding: 15% 0 0 0;
+}
+
+#contact h3 {
+	margin-bottom: 10%;
+}
+
+#contact p {
+	margin-bottom: 10%;
+}
+
+.contact-info {
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 5%;
+	margin-left: 2%;
+}
+
+
+footer {
+	margin-top: 15%;
+	border-top: 2px solid #D8DCDF;
+	padding: 9% 5%;
+	font-weight: bold;
+}
+
+.name {
+	float: left;
+	
+}
+
+.back {
+	float: right;
+}
+
+.footer-nav li {
+	display: none;
+}
+
+
+/*  Clearfix  */
+
+.group::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* --- Media Queries --- */
+
+@media (min-width: 480px) {		/* tablets */ 
+
+	h1 {
+		font-size: 1.1em;
+		margin-top: 7%;
+		margin-bottom: 0;
+	}
+
+	.main-nav {
+		margin-top: 0;
+		margin-bottom: 5%;
+	}
+
+	.main-nav ul {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin: 0 2.5%;
+		background: #F8F8F9;
+	}
+
+	.main-nav li,
+	h3,
+	.name {
+		font-size: .7em;
+	}
+
+	.student-intro {
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 17%;
+		margin-left: 4%;
+		font-size: .95em;
+		line-height: 1.4;
+		color: #737F8B;
+	}
+
+	.student-photo {
+		float: right;
+		margin-left: 2%;
+		margin-right: 4%;
+		width: 37%;
+	}
+
+	#portfolio {
+		margin-top: 12%;
+		padding-top: 5%;
+		padding-right: 3%;
+		padding-left: 3%;
+		padding-bottom: 6%;
+	}
+
+	#portfolio h3 {
+		margin-bottom: 0;
+	}
+
+	.portfolio-entry {
+		margin-top: 5%;
+		margin-right: 1%;
+		margin-left: 1%;
+		width: 48%;
+		float: left;
+		font-size: .75em;
+	}
+
+	h2 {
+		margin-top: 6%;
+	}
+
+	.page-description {
+		margin-bottom: 4%;
+	}
+
+	/* Portfolio Clearfix - make #portfolio contain floated elements */
+	#portfolio::after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+
+	#contact {
+		padding-top: 6%;
+	}
+
+	#contact h3 {
+		margin-bottom: 0;
+	}
+
+	#contact p {
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: .95em;
+		margin: 6% 22% 7%;
+	}
+
+	footer {
+		margin-top: 5%;
+		padding-top: 3%;
+	}
+
+	.contact-info {
+		margin-bottom: 3%;
+	}
+
+	.back {
+		display: none;
+	}
+
+	.footer-nav ul{
+		margin: -1% 0 0 0;
+		padding: 0;
+		/*text-align: right;*/
+		float: right;
+	}
+
+	.footer-nav li {
+		display: inline;
+		background: #F8F8F9;
+		padding-top: 0;
+		font-size: .65em;
+	}
+
+
+}
+
+
+@media (min-width: 1024px) {	/* laptops & desktops */
+
+	h1 {
+		font-size: 1.2em;
+		text-align: left;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+
+	.main-nav {
+		font-size: 1.2em;
+		text-align: right;
+		margin-top: -2%;
+		margin-bottom: 0;
+	}
+
+	.main-nav li {
+		padding-top: 0;
+		margin: 0 0 0 4%;
+	}
+
+	.student-intro {
+		margin-left: 5%;
+		line-height: 1.5;
+		font-size: 1.1em;
+	}
+
+	.student-photo {
+		margin-left: 5%;
+	}
+
+	h3 {
+		font-size: 1em;
+	} 
+
+	.portfolio-entry {
+		font-size: .85em;
+	}
+
+	.portfolio-entry {
+		width: 31.33%;
+	}
+
+	#contact p {
+		font-size: 1.2em;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	
+	footer {
+		padding-bottom: 5%;
+	}
+
+}
+
